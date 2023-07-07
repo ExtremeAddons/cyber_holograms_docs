@@ -6,6 +6,13 @@
 Welcome to Cyber Holograms's documentation!
 ===========================================
 
+.. figure:: _static/_images/art/robot_cover_01.png
+    :align: center
+    :alt: cover
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
