@@ -1,9 +1,13 @@
 .. _use_in_extreme_pbr:
 
-Use in Extreme PBR
-======================
+Extreme PBR Expansion
+========================
 
 This section is dedicated to the use of the Cyber Holograms expansion for Extreme PBR.
+
+If you want to use Cyber Holograms in Asset Browser go to the dedicated section: :ref:`use_in_asset_browser`
+
+
 
 .. Note::
 

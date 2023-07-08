@@ -14,10 +14,16 @@ Welcome to Cyber Holograms's documentation!
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 4
+   :caption: Get started:
 
    installation
+
+
+.. toctree::
+   :maxdepth: 4
+   :caption: How To use:
+
    asset_browser_use
    extreme_pbr_expansion_use
 
