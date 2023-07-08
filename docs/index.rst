@@ -3,8 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Cyber Holograms's documentation!
-===========================================
+Welcome to Cyber Hologram's documentation!
+===================================================
+
+**The Expansion Library**
+
 
 .. figure:: _static/_images/art/robot_cover_01.png
     :align: center

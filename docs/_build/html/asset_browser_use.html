@@ -72,7 +72,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#edit-group-parameters">Edit Group Parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#glitch-group">Glitch Group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#mix-gradient">Mix Gradient</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#strength">Strength</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Glitch Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#make-individual-node-group">Make individual Node Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#animate-parameters">Animate Parameters</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="extreme_pbr_expansion_use.html">Extreme PBR Expansion</a></li>
@@ -172,10 +174,10 @@ its scale and its animation speed</p>
 <h2>Change Coordinates<a class="headerlink" href="#change-coordinates" title="Permalink to this heading"></a></h2>
 <p>The material can be anchored to Camera, UV or World Coordinates, instead of default Generated Local Coordinates.</p>
 <a class="reference internal image-reference" href="_images/camera_coordinate_asb_01.jpg"><img alt="camera_coordinate_asb_01" class="align-center" src="_images/camera_coordinate_asb_01.jpg" style="width: 800px;" /></a>
-</section>
 <hr class="docutils" />
+</section>
 <section id="glitch-effect">
-<h2>Glitch Effect<a class="headerlink" href="#glitch-effect" title="Permalink to this heading"></a></h2>
+<span id="id1"></span><h2>Glitch Effect<a class="headerlink" href="#glitch-effect" title="Permalink to this heading"></a></h2>
 <p>On top of the noise animation, you can activate another animation named <strong>Glitch</strong>, which consist of a serie of horizontal
 bands interfering with the effect</p>
 <ul class="simple">
@@ -265,12 +267,37 @@ to ensure that the changes are applied to all materials that use the group.</p>
 <h2>Mix Gradient<a class="headerlink" href="#mix-gradient" title="Permalink to this heading"></a></h2>
 <p>Keeping the From Min and From Max parameters close to each other the separation will be sharp</p>
 <a class="reference internal image-reference" href="_images/f_min_f_max_mix_group.png"><img alt="f_min_f_max_mix_group" class="align-center" src="_images/f_min_f_max_mix_group.png" style="width: 800px;" /></a>
-</section>
-<section id="strength">
-<h2>Strength<a class="headerlink" href="#strength" title="Permalink to this heading"></a></h2>
 <p>The Strength value is added globally to the gradient, allowing for further animatable effects</p>
 <p>It is possible to anchor the gradient to world coordinates instead of local ones</p>
-<p>Here too it is possible to introduce an additional glitch effect, with the usual parameters</p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>Glitch Group<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<p>Here too it is possible to introduce an additional glitch effect, with the usual parameters.</p>
+<a class="reference internal image-reference" href="_images/glitch_node_group_02.jpg"><img alt="glitch_node_group_02" class="align-center" src="_images/glitch_node_group_02.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="make-individual-node-group">
+<h2>Make individual Node Group<a class="headerlink" href="#make-individual-node-group" title="Permalink to this heading"></a></h2>
+<p>If you want to add the same effect but different settings, use “Append” instead of “Append Reuse Data” before dragging</p>
+<a class="reference internal image-reference" href="_images/append_node_group_01.png"><img alt="append_node_group_01" class="align-center" src="_images/append_node_group_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Or once the group has been applied, you can make it independent of the original group, by clicking on “Make Single User”
+as in the example below:</p>
+<a class="reference internal image-reference" href="_images/make_ng_single_user_01.png"><img alt="make_ng_single_user_01" class="align-center" src="_images/make_ng_single_user_01.png" style="width: 800px;" /></a>
+</section>
+<section id="animate-parameters">
+<h2>Animate Parameters<a class="headerlink" href="#animate-parameters" title="Permalink to this heading"></a></h2>
+<p>Every parameter can be animated!</p>
+<a class="reference internal image-reference" href="_images/animated_parameters_01.gif"><img alt="animated_parameters_01" class="align-center" src="_images/animated_parameters_01.gif" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In order to animate the parameters, you need to right click on the parameter and select <strong>Insert Keyframe</strong>, to do this
+keep in mind that the timeline must be open in order to insert the keyframes in the right frame.</p>
+<a class="reference internal image-reference" href="_images/timeline_keyframe_01.png"><img alt="timeline_keyframe_01" class="align-center" src="_images/timeline_keyframe_01.png" style="width: 800px;" /></a>
 </section>
 </section>
 

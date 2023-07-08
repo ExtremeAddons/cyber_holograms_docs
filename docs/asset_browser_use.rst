@@ -145,6 +145,8 @@ The material can be anchored to Camera, UV or World Coordinates, instead of defa
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _glitch_effect:
+
 Glitch Effect
 ---------------------
 
@@ -312,15 +314,77 @@ Keeping the From Min and From Max parameters close to each other the separation 
     :width: 800
     :alt: f_min_f_max_mix_group
 
-
-Strength
-----------------
-
 The Strength value is added globally to the gradient, allowing for further animatable effects
 
 It is possible to anchor the gradient to world coordinates instead of local ones
 
-Here too it is possible to introduce an additional glitch effect, with the usual parameters
+------------------------------------------------------------------------------------------------------------------------
+
+Glitch Group
+---------------------
+
+Here too it is possible to introduce an additional glitch effect, with the usual parameters.
+
+
+.. image:: _static/_images/asset_browser/glitch_node_group_02.jpg
+    :align: center
+    :width: 800
+    :alt: glitch_node_group_02
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Make individual Node Group
+----------------------------
+
+If you want to add the same effect but different settings, use “Append” instead of “Append Reuse Data” before dragging
+
+.. image:: _static/_images/asset_browser/append_node_group_01.png
+    :align: center
+    :width: 800
+    :alt: append_node_group_01
+
+
+|
+
+Or once the group has been applied, you can make it independent of the original group, by clicking on "Make Single User"
+as in the example below:
+
+.. image:: _static/_images/asset_browser/make_ng_single_user_01.png
+    :align: center
+    :width: 800
+    :alt: make_ng_single_user_01
+
+
+Animate Parameters
+---------------------
+
+Every parameter can be animated!
+
+.. image:: _static/_images/asset_browser/animated_parameters_01.gif
+    :align: center
+    :width: 800
+    :alt: animated_parameters_01
+
+|
+
+In order to animate the parameters, you need to right click on the parameter and select **Insert Keyframe**, to do this
+keep in mind that the timeline must be open in order to insert the keyframes in the right frame.
+
+.. image:: _static/_images/asset_browser/timeline_keyframe_01.png
+    :align: center
+    :width: 800
+    :alt: timeline_keyframe_01
+
+
+
+
+
+
+
+
+
+
 
 
 
