@@ -9,9 +9,9 @@ Welcome to the installation guide for Holograms Expansion
           - Cyber Hologram Expansion (Version for Extreme PBR)
 
           Pay attention to which version you want to install, if you have any doubts please proceed with this guide.
-          **the versions are contained in the zip file "Cyber Holograms.zip"**
+          **The versions are contained in the zip file "Cyber Holograms.zip"**
 
-Install into Extreme PBR:
+Install into Extreme PBR
 ----------------------------
 
 If you own Extreme PBR here is a video tutorial on how to install the expansion pack
@@ -110,6 +110,52 @@ Here is a video tutorial on how to install the version for the asset browser in 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Li6ckkrM0-g" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
         web-share" allowfullscreen style="display: block; margin: auto;"></iframe>
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+**Add a new Asset Library**
+
+In Blender, go to **edit-->preferences-->File paths** and click on the plus button to add an Asset Library
+
+
+.. image:: _static/_images/installation/add_asset_libraries_01.png
+    :align: center
+    :width: 800
+    :alt: add_asset_libraries_01
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+**Locate the Cyber Hologram Assets folder**
+
+Once you press the plus button, a browser window will open, here you will have to locate the **Cyber Hologram Assets** folder
+
+.. image:: _static/_images/installation/locate_asset_folder_01.jpg
+    :align: center
+    :width: 800
+    :alt: locate_asset_folder_01
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+**Double click to open it and then press the Add Asset Library button**
+
+
+.. image:: _static/_images/installation/locate_asset_folder_02.jpg
+    :align: center
+    :width: 800
+    :alt: locate_asset_folder_02
+
+
+
+
+
+
+
+
 
 
 
