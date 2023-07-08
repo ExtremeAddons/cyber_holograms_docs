@@ -20,6 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="FAQs" href="faqs.html" />
     <link rel="prev" title="Asset Browser Library" href="asset_browser_use.html" /> 
 </head>
 
@@ -49,7 +50,23 @@
 <p class="caption" role="heading"><span class="caption-text">How To use:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="asset_browser_use.html">Asset Browser Library</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Extreme PBR Expansion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="asset_browser_use.html#hologram-nodes">Hologram Nodes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Extreme PBR Expansion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#youtube-tutorial">Youtube Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#material-editor">Material Editor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#color">Color</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#blend">Blend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modify-grid">Modify Grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#animate-holograms">Animate holograms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#animated-glitch">Animated Glitch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
 </ul>
 
         </div>
@@ -88,6 +105,64 @@
 <li><p>Gumroad: <a class="reference external" href="https://andrew-d.gumroad.com/l/BvpHx">https://andrew-d.gumroad.com/l/BvpHx</a></p></li>
 </ul>
 </div>
+<section id="youtube-tutorial">
+<h2>Youtube Tutorial<a class="headerlink" href="#youtube-tutorial" title="Permalink to this heading"></a></h2>
+<p>Questo tutorial ti aiuterà a capire come usare Cyber Holograms in Extreme PBR.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kIwrdTSkDdo" title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" allowfullscreen style="display: block; margin: auto;"></iframe></section>
+<hr class="docutils" />
+<section id="material-editor">
+<h2>Material Editor<a class="headerlink" href="#material-editor" title="Permalink to this heading"></a></h2>
+<p>Each Holographic material applied with Extreme PBR will have the advantage of having a dedicated and specially
+built editing interface, each material has been designed to be as simple as possible to use and at the same time
+have maximum control possible from the Extreme PBR panel.</p>
+<a class="reference internal image-reference" href="_images/material_editor_01.jpg"><img alt="material_editor_01" class="align-center" src="_images/material_editor_01.jpg" style="width: 800px;" /></a>
+<hr class="docutils" />
+<section id="color">
+<h3>Color<a class="headerlink" href="#color" title="Permalink to this heading"></a></h3>
+<p>You can change the colors and the emission strength</p>
+<a class="reference internal image-reference" href="_images/material_editor_02.jpg"><img alt="material_editor_02" class="align-center" src="_images/material_editor_02.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="blend">
+<h3>Blend<a class="headerlink" href="#blend" title="Permalink to this heading"></a></h3>
+<p>You can set the blending between the Grid and the Contour area, trim the sharpness of the blending area,
+set the transparency setting of Eevee material, fade the faces with inverted normals</p>
+<a class="reference internal image-reference" href="_images/material_editor_03.jpg"><img alt="material_editor_03" class="align-center" src="_images/material_editor_03.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="modify-grid">
+<h3>Modify Grid<a class="headerlink" href="#modify-grid" title="Permalink to this heading"></a></h3>
+<p>You can set the scale of the grid, its thickness and rotation</p>
+<a class="reference internal image-reference" href="_images/material_editor_03.jpg"><img alt="material_editor_05" class="align-center" src="_images/material_editor_03.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="animate-holograms">
+<h3>Animate holograms<a class="headerlink" href="#animate-holograms" title="Permalink to this heading"></a></h3>
+<p>All Hologram materials are animated by a procedural texture. Press play and trim the strength, the range, the scale and the speed of the animation</p>
+<a class="reference internal image-reference" href="_images/material_editor_04.jpg"><img alt="material_editor_06" class="align-center" src="_images/material_editor_04.jpg" style="width: 800px;" /></a>
+<p>The effect can be binded to Camera coordinates, UV coordinates or World coordinates</p>
+</section>
+<hr class="docutils" />
+<section id="animated-glitch">
+<h3>Animated Glitch<a class="headerlink" href="#animated-glitch" title="Permalink to this heading"></a></h3>
+<p>On top of texture animation you can add a Glitch effect, which will turn off some bands of the model on a random fashion
+or even shut down the whole material.</p>
+<ul class="simple">
+<li><p><strong>Glc Speed (Full)</strong> is the base value of the speed of the whole Glitch effect</p></li>
+<li><p><strong>Glc Shutting down</strong> is the amount of the total shutdown of the material</p></li>
+<li><p><strong>Glc OSC Noise scale</strong> is a multiplier of the overall speed</p></li>
+<li><p><strong>Glc Phase</strong> shifts in time the noise</p></li>
+<li><p><strong>Glc Bands speed</strong> controls the speed of bands only</p></li>
+<li><p><strong>Glc Bands Strength</strong> controls the strength of the Bands effect</p></li>
+<li><p><strong>Glc Bands scale</strong> sets the scale of the bands</p></li>
+<li><p><strong>Glc Bands Thickness</strong> sets the proportions between bands and unaffected areas</p></li>
+<li><p><strong>Glc Bands distortion</strong> adds a stretching distortion to make the bands less readable</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/material_editor_05.jpg"><img alt="material_editor_07" class="align-center" src="_images/material_editor_05.jpg" style="width: 800px;" /></a>
+</section>
+</section>
 </section>
 
 
@@ -95,6 +170,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="asset_browser_use.html" class="btn btn-neutral float-left" title="Asset Browser Library" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="faqs.html" class="btn btn-neutral float-right" title="FAQs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

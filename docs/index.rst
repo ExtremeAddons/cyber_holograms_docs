@@ -31,6 +31,20 @@ Welcome to Cyber Hologram's documentation!
    extreme_pbr_expansion_use
 
 
+.. toctree::
+   :maxdepth: 4
+   :caption: Video Tutorials:
+
+   video_tutorials
+
+
+.. toctree::
+   :maxdepth: 4
+   :caption: FAQs & Troubleshooting:
+
+   faqs
+
+
 
 
 
