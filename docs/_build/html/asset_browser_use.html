@@ -51,13 +51,28 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Asset Browser Library</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#open-an-asset-browser">Open an Asset Browser</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#apply-hologram-material">Apply Hologram material</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#edit-hologram-material">Edit Hologram material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#apply-hologram-material">Apply Hologram material</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#edit-hologram-material">Edit Hologram material</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#color-emission">Color &amp; Emission</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#blend-effect">Blend Effect</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#transparency">Transparency</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#noise">Noise</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#change-coordinates">Change Coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#glitch-effect">Glitch Effect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lights">Lights</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#hologram-nodes">Hologram Nodes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#youtube-tutorial">Youtube Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-node-group">Add Node Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-group-to-material">Add Group to Material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-group-to-material">Connect Group to Material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edit-group-parameters">Edit Group Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#glitch-group">Glitch Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mix-gradient">Mix Gradient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#strength">Strength</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="extreme_pbr_expansion_use.html">Extreme PBR Expansion</a></li>
@@ -107,14 +122,14 @@ for Extreme PBR, go to the dedicated section here: <a class="reference internal"
 <p>Select the Materials Holograms section and simply drag and drop an Hologram material onto your model.
 The material active on the model will be automatically replaced with the Hologram material</p>
 <a class="reference internal image-reference" href="_images/apply_material_from_asset_browser_01.jpg"><img alt="apply_material_from_asset_browser_01" class="align-center" src="_images/apply_material_from_asset_browser_01.jpg" style="width: 800px;" /></a>
-</section>
 <hr class="docutils" />
 <section id="edit-hologram-material">
-<h2>Edit Hologram material<a class="headerlink" href="#edit-hologram-material" title="Permalink to this heading"></a></h2>
+<h3>Edit Hologram material<a class="headerlink" href="#edit-hologram-material" title="Permalink to this heading"></a></h3>
 <p>Once the material has been applied you can edit its parameters like any other material,
 to do this, select the material and go to the “Material Properties” tab and you will find all the controls for
 customize the effect</p>
 <a class="reference internal image-reference" href="_images/edit_material_asb_01.jpg"><img alt="edit_material_asb_01" class="align-center" src="_images/edit_material_asb_01.jpg" style="width: 800px;" /></a>
+</section>
 </section>
 <hr class="docutils" />
 <section id="color-emission">
@@ -157,6 +172,105 @@ its scale and its animation speed</p>
 <h2>Change Coordinates<a class="headerlink" href="#change-coordinates" title="Permalink to this heading"></a></h2>
 <p>The material can be anchored to Camera, UV or World Coordinates, instead of default Generated Local Coordinates.</p>
 <a class="reference internal image-reference" href="_images/camera_coordinate_asb_01.jpg"><img alt="camera_coordinate_asb_01" class="align-center" src="_images/camera_coordinate_asb_01.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="glitch-effect">
+<h2>Glitch Effect<a class="headerlink" href="#glitch-effect" title="Permalink to this heading"></a></h2>
+<p>On top of the noise animation, you can activate another animation named <strong>Glitch</strong>, which consist of a serie of horizontal
+bands interfering with the effect</p>
+<ul class="simple">
+<li><p><strong>Glitch On</strong> activates the animation</p></li>
+<li><p><strong>Glc Speed (Full)</strong> is the base for the speed of the full glitch fx</p></li>
+<li><p><strong>Glc Shutting Down</strong> adds a random complete shutdown of the material</p></li>
+<li><p><strong>Glc OSC noise scale</strong> is a multiplier for the base speed</p></li>
+<li><p><strong>Glc Phase</strong> shifts in time the noise speed</p></li>
+<li><p><strong>Glc Bands Speed</strong> controls the speed of bands only</p></li>
+<li><p><strong>Glc Bands Strength</strong> sets the amount of the speed effect</p></li>
+<li><p><strong>Glc Bands Scale</strong> controls the scale of the bands</p></li>
+<li><p><strong>Glc Bands Thickness</strong> is the proportion between bands and unaffected areas</p></li>
+<li><p><strong>Glc Bands Distortion</strong> makes the bands less readable</p></li>
+<li><p><strong>Glc Random</strong> per object lets you have different appearance on different objects, lastly you can hook the bands to <strong>World Coordinates</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/glitch_asb_01.jpg"><img alt="glitch_asb_01" class="align-center" src="_images/glitch_asb_01.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="lights">
+<h2>Lights<a class="headerlink" href="#lights" title="Permalink to this heading"></a></h2>
+<p>Cyber Holograms Lights work in a very similar way, simply choose an appropriate base mesh, like cones, hemispheres and the like</p>
+<a class="reference internal image-reference" href="_images/light_cone_01.jpg"><img alt="light_cone_01" class="align-center" src="_images/light_cone_01.jpg" style="width: 800px;" /></a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="hologram-nodes">
+<h1>Hologram Nodes<a class="headerlink" href="#hologram-nodes" title="Permalink to this heading"></a></h1>
+<section id="youtube-tutorial">
+<span id="hologram-nodes-yt-tutorial"></span><h2>Youtube Tutorial<a class="headerlink" href="#youtube-tutorial" title="Permalink to this heading"></a></h2>
+<p>How to use The Node Groups from Asset Browser
+The group nodes are used if you do not have Extreme PBR, this allows you to mix through the nodes available in the Cyber
+Holograms asset browser, your material to a Hologram, creating a gradient effect</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aadIdW2nBbw" title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" allowfullscreen style="display: block; margin: auto;"></iframe></section>
+<hr class="docutils" />
+<section id="add-node-group">
+<h2>Add Node Group<a class="headerlink" href="#add-node-group" title="Permalink to this heading"></a></h2>
+<p>In this example the robot has 2 materials</p>
+<p>Open an Asset Browser window, select the Cyber Hologram Assets library</p>
+<p>In the example below you can see the node tree of the robot material. So you can in the next step, add a node group to create
+an Hologram effect</p>
+<a class="reference internal image-reference" href="_images/set_cyber_hologram_asset_01.png"><img alt="set_cyber_hologram_asset_01" class="align-center" src="_images/set_cyber_hologram_asset_01.png" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="add-group-to-material">
+<h2>Add Group to Material<a class="headerlink" href="#add-group-to-material" title="Permalink to this heading"></a></h2>
+<p>Expand the Node Groups category, choose Holograms, drag the Holo Hexa SHD node into the shader editor window</p>
+<p>Assicurati di aver selezionato il modello e di essere sul materiale desiderato del modello.</p>
+<a class="reference internal image-reference" href="_images/add_node_group_to_material_01.png"><img alt="add_node_group_to_material_01" class="align-center" src="_images/add_node_group_to_material_01.png" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="connect-group-to-material">
+<h2>Connect Group to Material<a class="headerlink" href="#connect-group-to-material" title="Permalink to this heading"></a></h2>
+<p>Make sure to drag the hologram group node always between the <strong>Material Output</strong> node and the previous node,
+(In this case the <strong>Principled BSDF</strong> node)</p>
+<p>Once dragged on the link between the two nodes, the group node will automatically connect</p>
+<a class="reference internal image-reference" href="_images/link_group_into_material.png"><img alt="link_group_into_material" class="align-center" src="_images/link_group_into_material.png" style="width: 800px;" /></a>
+<p>In this example, the robot material is different for each part of the body, so you need to add the group to all the robot
+materials if you want all the materials to have the hologram effect. Once done, you can modify the hologram effect through
+the group parameters, it will affect all the robot materials.</p>
+</section>
+<hr class="docutils" />
+<section id="edit-group-parameters">
+<h2>Edit Group Parameters<a class="headerlink" href="#edit-group-parameters" title="Permalink to this heading"></a></h2>
+<p>In order to edit the parameters, select the Holo Hexa node and press <strong>TAB</strong> key to show the nodes contained within it</p>
+<a class="reference internal image-reference" href="_images/node_group_edit_parameters_01.png"><img alt="node_group_edit_parameters_01" class="align-center" src="_images/node_group_edit_parameters_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Set the parameters as you like, as demonstrated in the related tutorials: <a class="reference internal" href="#hologram-nodes-yt-tutorial"><span class="std std-ref">Youtube Tutorial</span></a> The changes will affect both materials</p>
+</section>
+<hr class="docutils" />
+<section id="glitch-group">
+<h2>Glitch Group<a class="headerlink" href="#glitch-group" title="Permalink to this heading"></a></h2>
+<p>The second node, <strong>Shader Gradient Glitch</strong>, controls the parameters by which the effect is blended with the previous material
+It is possible to set the position of the separation line, rotate it, establish the type and quantity of blending.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is important to understand that the group node must be edited from the inside as shown, this is the only way
+to ensure that the changes are applied to all materials that use the group.</p>
+</div>
+<a class="reference internal image-reference" href="_images/glitch_node_group_01.jpg"><img alt="glitch_node_group_01" class="align-center" src="_images/glitch_node_group_01.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="mix-gradient">
+<h2>Mix Gradient<a class="headerlink" href="#mix-gradient" title="Permalink to this heading"></a></h2>
+<p>Keeping the From Min and From Max parameters close to each other the separation will be sharp</p>
+<a class="reference internal image-reference" href="_images/f_min_f_max_mix_group.png"><img alt="f_min_f_max_mix_group" class="align-center" src="_images/f_min_f_max_mix_group.png" style="width: 800px;" /></a>
+</section>
+<section id="strength">
+<h2>Strength<a class="headerlink" href="#strength" title="Permalink to this heading"></a></h2>
+<p>The Strength value is added globally to the gradient, allowing for further animatable effects</p>
+<p>It is possible to anchor the gradient to world coordinates instead of local ones</p>
+<p>Here too it is possible to introduce an additional glitch effect, with the usual parameters</p>
 </section>
 </section>
 

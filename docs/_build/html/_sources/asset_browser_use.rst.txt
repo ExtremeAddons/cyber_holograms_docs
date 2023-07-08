@@ -52,7 +52,7 @@ The material active on the model will be automatically replaced with the Hologra
 
 
 Edit Hologram material
-----------------------------
+****************************
 
 Once the material has been applied you can edit its parameters like any other material,
 to do this, select the material and go to the "Material Properties" tab and you will find all the controls for
@@ -142,6 +142,195 @@ The material can be anchored to Camera, UV or World Coordinates, instead of defa
     :align: center
     :width: 800
     :alt: camera_coordinate_asb_01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Glitch Effect
+---------------------
+
+On top of the noise animation, you can activate another animation named **Glitch**, which consist of a serie of horizontal
+bands interfering with the effect
+
+- **Glitch On** activates the animation
+- **Glc Speed (Full)** is the base for the speed of the full glitch fx
+- **Glc Shutting Down** adds a random complete shutdown of the material
+
+- **Glc OSC noise scale** is a multiplier for the base speed
+- **Glc Phase** shifts in time the noise speed
+- **Glc Bands Speed** controls the speed of bands only
+
+- **Glc Bands Strength** sets the amount of the speed effect
+- **Glc Bands Scale** controls the scale of the bands
+- **Glc Bands Thickness** is the proportion between bands and unaffected areas
+- **Glc Bands Distortion** makes the bands less readable
+- **Glc Random** per object lets you have different appearance on different objects, lastly you can hook the bands to **World Coordinates**
+
+.. image:: _static/_images/asset_browser/glitch_asb_01.jpg
+    :align: center
+    :width: 800
+    :alt: glitch_asb_01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Lights
+---------------------
+
+Cyber Holograms Lights work in a very similar way, simply choose an appropriate base mesh, like cones, hemispheres and the like
+
+.. image:: _static/_images/light_cone/light_cone_01.jpg
+    :align: center
+    :width: 800
+    :alt: light_cone_01
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Hologram Nodes
+===================================
+
+
+.. _hologram_nodes_yt_tutorial:
+
+Youtube Tutorial
+---------------------
+
+How to use The Node Groups from Asset Browser
+The group nodes are used if you do not have Extreme PBR, this allows you to mix through the nodes available in the Cyber
+Holograms asset browser, your material to a Hologram, creating a gradient effect
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aadIdW2nBbw" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen style="display: block; margin: auto;"></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Add Node Group
+---------------------
+
+In this example the robot has 2 materials
+
+Open an Asset Browser window, select the Cyber Hologram Assets library
+
+In the example below you can see the node tree of the robot material. So you can in the next step, add a node group to create
+an Hologram effect
+
+
+.. image:: _static/_images/asset_browser/set_cyber_hologram_asset_01.png
+    :align: center
+    :width: 800
+    :alt: set_cyber_hologram_asset_01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Add Group to Material
+-----------------------
+
+Expand the Node Groups category, choose Holograms, drag the Holo Hexa SHD node into the shader editor window
+
+Assicurati di aver selezionato il modello e di essere sul materiale desiderato del modello.
+
+.. image:: _static/_images/asset_browser/add_node_group_to_material_01.png
+    :align: center
+    :width: 800
+    :alt: add_node_group_to_material_01
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Connect Group to Material
+--------------------------
+
+Make sure to drag the hologram group node always between the **Material Output** node and the previous node,
+(In this case the **Principled BSDF** node)
+
+Once dragged on the link between the two nodes, the group node will automatically connect
+
+
+.. image:: _static/_images/asset_browser/link_group_into_material.png
+    :align: center
+    :width: 800
+    :alt: link_group_into_material
+
+
+In this example, the robot material is different for each part of the body, so you need to add the group to all the robot
+materials if you want all the materials to have the hologram effect. Once done, you can modify the hologram effect through
+the group parameters, it will affect all the robot materials.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Edit Group Parameters
+--------------------------
+
+In order to edit the parameters, select the Holo Hexa node and press **TAB** key to show the nodes contained within it
+
+
+.. image:: _static/_images/asset_browser/node_group_edit_parameters_01.png
+    :align: center
+    :width: 800
+    :alt: node_group_edit_parameters_01
+
+
+|
+
+Set the parameters as you like, as demonstrated in the related tutorials: :ref:`hologram_nodes_yt_tutorial` The changes will affect both materials
+
+------------------------------------------------------------------------------------------------------------------------
+
+Glitch Group
+---------------------
+
+The second node, **Shader Gradient Glitch**, controls the parameters by which the effect is blended with the previous material
+It is possible to set the position of the separation line, rotate it, establish the type and quantity of blending.
+
+.. Note::
+
+        It is important to understand that the group node must be edited from the inside as shown, this is the only way
+        to ensure that the changes are applied to all materials that use the group.
+
+
+.. image:: _static/_images/asset_browser/glitch_node_group_01.jpg
+    :align: center
+    :width: 800
+    :alt: glitch_node_group_01
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Mix Gradient
+----------------
+
+Keeping the From Min and From Max parameters close to each other the separation will be sharp
+
+
+.. image:: _static/_images/asset_browser/f_min_f_max_mix_group.png
+    :align: center
+    :width: 800
+    :alt: f_min_f_max_mix_group
+
+
+Strength
+----------------
+
+The Strength value is added globally to the gradient, allowing for further animatable effects
+
+It is possible to anchor the gradient to world coordinates instead of local ones
+
+Here too it is possible to introduce an additional glitch effect, with the usual parameters
+
+
+
+
+
+
+
+
+
+
 
 
 
