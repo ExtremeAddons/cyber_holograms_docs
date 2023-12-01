@@ -16,7 +16,7 @@ How can I contact you for assistance?
 If you have purchased the addon on BlenderMarket, go directly to the addon page and click on "Ask a question"
 usually I answer within 24 hours
 
-If you have purchased the addon on Gumroad, you can contact me via the chat at the bottom right on https://extreme-addons.com/
+If you have purchased the addon on Gumroad, you can contact me on **tredistudio@hotmail.com** or **info@extreme-addons.com**
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -73,8 +73,7 @@ of the scene directly from the materials, while with Cycles you will.
 Is there support?
 *****************
 
-Of course! You can contact me on https://blendermarket.com/ or on http://extreme-addons.com/
-(On extreme-addons.com you can find a chat button in the bottom right corner)
+Of course! You can contact me on https://blendermarket.com/ or on **tredistudio@hotmail.com** or **info@extreme-addons.com**
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -90,7 +89,7 @@ This is not necessarily necessary, Cyber Hologram also works in Asset Browser. I
 ------------------------------------------------------------------------------------------------------------------------
 
 What is Extreme PBR?
-*******************
+*********************
 
 Extreme PBR is an addon for Blender that contains about 2000 materials, it is distributed separately.
 
