@@ -24,7 +24,13 @@ If you have purchased the addon on Gumroad, you can contact me on **tredistudio@
 Which version of Blender is compatible?
 ***************************************
 
-The addon is compatible with all versions from 3.0 (Included) onwards.
+As for the library for Asset Browser:
+
+- Cyber Holograms Contains 2 versions, one for Blender from 3.2 to 3.6 and one for Blender 4.0 and up.
+
+As for the library for Extreme PBR:
+
+- Cyber Holograms Expansion for Extreme PBR is compatible from Blender 3.2 and up.
 
 
 ------------------------------------------------------------------------------------------------------------------------

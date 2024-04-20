@@ -3,19 +3,27 @@ Installation
 
 Welcome to the installation guide for Holograms Expansion
 
-.. Note:: Cyber Holograms is distributed in 2 versions, you will find the following in your downloads:
+.. Note:: Cyber Holograms contains 3 file versions , you will find the following in your downloads:
 
-          - Cyber Hologram Assets (Version for Blender asset browser)
-          - Cyber Hologram Expansion (Version for Extreme PBR)
+          - Cyber Holograms Asset Browser For Blender 3.2 to 3.6.zip
+          - Cyber Holograms Asset Browser For Blender 4.0 and Up.zip
+          - Cyber Holograms Expansion for Extreme PBR.zip (new version of the expansion library 1.1 released on 16 April 2024)
+            The version for Extreme PBR is not for the Blender Asset Browser.
 
           Pay attention to which version you want to install, if you have any doubts please proceed with this guide.
-          **The versions are contained in the zip file "Cyber Holograms.zip"**
 
 Install into Extreme PBR
 ----------------------------
 
-If you own Extreme PBR here is a video tutorial on how to install the expansion pack
-"Cyber Holograms Expansion" inside Extreme PBR
+.. important::
+
+    It is recommended to have installed a version of Extreme PBR equal to or greater than **4.1.124**
+    From this version of Extreme PBR you can also check which version of the library is installed:
+
+    .. image:: _static/_images/installation/check_library_version_in_extreme_pbr.webp
+        :align: center
+        :width: 600
+        :alt: extreme_pbr_version
 
 
 .. raw:: html
@@ -27,14 +35,16 @@ If you own Extreme PBR here is a video tutorial on how to install the expansion 
 
 ------------------------------------------------------------------------------------------------------------------------
 
+**Download the necessary files**
+
+- Download the zip file named **Cyber Holograms Expansion for Extreme PBR.zip**
+- Extract the content of the zip file into a folder of your choice on your computer (Avoid the path where Blender installs the addons)
+
+------------------------------------------------------------------------------------------------------------------------
 
 **Add Expansion into Extreme PBR**
 
-
-Take 2 minutes and make sure you have downloaded the necessary files for the installation, once you have downloaded
-the files make sure you have the folder **"Cyber Holograms Expansion"** which is the one to add to the extensions of Extreme PBR
-
-So let's proceed, to add the expansion to Extreme PBR, open Extreme PBR and press on **Options > Library Management > Add Library**
+To add the expansion to Extreme PBR, open Extreme PBR and press on **Options > Library Management > Add Library**
 
 
 .. image:: _static/_images/installation/add_into_extreme_pbr_expansion_01.jpg
@@ -97,9 +107,14 @@ So let's proceed, to add the expansion to Extreme PBR, open Extreme PBR and pres
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
 Install into Asset Browser
 ----------------------------
+
+.. note::
+
+        As mentioned earlier, pay attention to which version of Blender you are using, and choose the correct version
+        of Cyber Holograms Asset Browser, if for example you are using Blender 4.1 or higher, download the zip file
+        **Cyber Holograms Asset Browser For Blender 4.0 and Up.zip**
 
 
 Here is a video tutorial on how to install the version for the asset browser in Blender
