@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.abspath('../../..'))
 sys.path.append(os.path.relpath(os.path.dirname(__file__)))
 
 project = 'Cyber Holograms'
-copyright = '2023, Andrea Donati'
+copyright = '2024, Andrea Donati'
 author = 'Andrea Donati'
 
 # -- General configuration ---------------------------------------------------
